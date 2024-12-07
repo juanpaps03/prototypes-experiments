@@ -9,7 +9,6 @@ from starlette.requests import Request
 from starlette.status import HTTP_403_FORBIDDEN
 from pydantic import ValidationError
 
-# from context_config import add_organization_id_to_context
 
 LONG_JWT_EXPIRATION = 3586374563
 
@@ -19,7 +18,6 @@ http_forbidden_error = HTTPException(
 http_wrong_auth_method = HTTPException(
     status_code=HTTP_403_FORBIDDEN, detail="Wrong authentication method"
 )
-
 
 
 @dataclass(frozen=True)
@@ -91,7 +89,6 @@ class JWTBearer(HTTPBearer):
 
             try:
                 jwt_data = self._internal_jwt_auth.validate_token(jwt_token)
-                # add_organization_id_to_context(jwt_data.client_id)
                 if not jwt_data:
                     raise http_forbidden_error
                 return jwt_data
