@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "inbound-data-gateway"
+version = "0.1.0"
+description = ""
+authors = ["Juan Pablo <juanpaps03@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+fastapi = "^0.115.6"
+pydantic-settings = "^2.6.1"
+pyjwt = "^2.10.1"
+auth = {path = "../../libraries/auth"} #rename this to authlib or internal-auth-lib
+structlog = "^24.4.0"
+
+
+[tool.poetry.group.dev.dependencies]
+fastapi = {extras = ["standard"], version = "^0.115.6"}
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

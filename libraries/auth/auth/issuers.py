@@ -1,0 +1,6 @@
+from enum import StrEnum
+
+
+class Issuers(StrEnum):
+    MIDDLEWARE_PARSER = "MIDDLEWARE-PARSER"
+    INBOUND_DATA_GATEWAY = "INBOUND-DATA-GATEWAY"
