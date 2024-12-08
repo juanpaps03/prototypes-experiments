@@ -1,32 +1,90 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="807732fa-591d-4d8c-b7bd-fe0d58a928fa" name="Changes" comment="" />
+    <list default="true" id="807732fa-591d-4d8c-b7bd-fe0d58a928fa" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/data-access/event-sourcing-example/.python-version" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data-access/event-sourcing-example/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data-access/event-sourcing-example/app-local.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data-access/event-sourcing-example/build.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data-access/event-sourcing-example/event_sourcing_example/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data-access/event-sourcing-example/event_sourcing_example/api/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data-access/event-sourcing-example/event_sourcing_example/api/event_sourcing_example.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data-access/event-sourcing-example/event_sourcing_example/example_data/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data-access/event-sourcing-example/event_sourcing_example/example_data/example_data.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data-access/event-sourcing-example/event_sourcing_example/example_data/models.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data-access/event-sourcing-example/event_sourcing_example/main.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data-access/event-sourcing-example/event_sourcing_example/settings.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data-access/event-sourcing-example/features/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data-access/event-sourcing-example/features/steps/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data-access/event-sourcing-example/pyproject.toml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data-access/event-sourcing-example/tests/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gateways/inbound-data-gateway/inbound_data_gateway/clients/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libraries/auth/increment_version.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/Prototypes.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Prototypes.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gateways/inbound-data-gateway/inbound_data_gateway/example_data/example_data.py" beforeDir="false" afterPath="$PROJECT_DIR$/gateways/inbound-data-gateway/inbound_data_gateway/example_data/example_data.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gateways/inbound-data-gateway/inbound_data_gateway/example_data/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/gateways/inbound-data-gateway/inbound_data_gateway/example_data/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gateways/inbound-data-gateway/inbound_data_gateway/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/gateways/inbound-data-gateway/inbound_data_gateway/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gateways/inbound-data-gateway/inbound_data_gateway/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/gateways/inbound-data-gateway/inbound_data_gateway/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gateways/inbound-data-gateway/poetry.lock" beforeDir="false" afterPath="$PROJECT_DIR$/data-access/event-sourcing-example/poetry.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gateways/inbound-data-gateway/pyproject.toml" beforeDir="false" afterPath="$PROJECT_DIR$/gateways/inbound-data-gateway/pyproject.toml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/auth/auth/external_auth.py" beforeDir="false" afterPath="$PROJECT_DIR$/libraries/auth/auth/external_auth.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/auth/auth/internal_auth.py" beforeDir="false" afterPath="$PROJECT_DIR$/libraries/auth/auth/internal_auth.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/auth/auth/issuers.py" beforeDir="false" afterPath="$PROJECT_DIR$/libraries/auth/auth/issuers.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/auth/auth/jwt.py" beforeDir="false" afterPath="$PROJECT_DIR$/libraries/auth/auth/jwt.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/auth/pyproject.toml" beforeDir="false" afterPath="$PROJECT_DIR$/libraries/auth/pyproject.toml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 0
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 0
+}</component>
   <component name="ProjectId" id="2pqgus5PU2O5TtBX0RlQgjmD6NL" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Python.build.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/juanpaps03/PycharmProjects/Prototypes&quot;
   }
-}]]></component>
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/data-access" />
+      <recent name="$PROJECT_DIR$/gateways/inbound-data-gateway" />
+      <recent name="$PROJECT_DIR$/gateways/inbound-data-gateway/inbound_data_gateway" />
+      <recent name="$PROJECT_DIR$/gateways/read-data-gateway" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/gateways/inbound-data-gateway" />
+      <recent name="$PROJECT_DIR$/gateways" />
+      <recent name="$PROJECT_DIR$" />
+    </key>
+  </component>
   <component name="RunManager">
-    <configuration name="main" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
+    <configuration name="build" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="Prototypes" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -39,7 +97,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/main.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/build.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -52,7 +110,7 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-python-sdk-d7ad00fb9fc3-c546a90a8094-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-242.23726.102" />
+        <option value="bundled-python-sdk-6a3326d57233-c546a90a8094-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-242.24807.21" />
       </set>
     </attachedChunks>
   </component>
@@ -66,16 +124,5 @@
       <updated>1733499244130</updated>
     </task>
     <servers />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/main.py</url>
-          <line>8</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>

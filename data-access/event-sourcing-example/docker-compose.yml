@@ -1,0 +1,31 @@
+
+services:
+  database:
+    image: 'postgres:latest'
+    ports:
+      - 5432:5432
+    environment:
+      POSTGRES_USER: "user"
+      POSTGRES_PASSWORD: "password"
+      POSTGRES_DB: "event_sourcing_local"
+    networks:
+      - prototypes-network
+    volumes:
+      - ${PWD}/db-data/:/var/lib/postgresql/data/
+
+  pgadmin:
+    image: dpage/pgadmin4
+    environment:
+      PGADMIN_DEFAULT_EMAIL: "localpgadmin@jpoitte.me"
+      PGADMIN_DEFAULT_PASSWORD: "hola1234"
+    ports:
+      - 15433:80
+    depends_on:
+      - database
+    networks:
+      - prototypes-network
+    volumes:
+      - ${PWD}/pgadmin-data/:/var/lib/pgadmin/
+
+networks:
+  prototypes-network:

@@ -2,4 +2,4 @@
 
 export PATH=$HOME/.local/bin:$PATH
 
-fastapi dev inbound_data_gateway/main.py
+python3 event_sourcing_example/main.py

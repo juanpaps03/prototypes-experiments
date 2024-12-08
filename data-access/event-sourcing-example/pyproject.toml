@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "inbound-data-gateway"
+name = "event-sourcing-example"
 version = "0.1.0"
 description = ""
 authors = ["Juan Pablo <juanpaps03@gmail.com>"]
@@ -9,10 +9,13 @@ readme = "README.md"
 python = "^3.12"
 fastapi = "^0.115.6"
 pydantic-settings = "^2.6.1"
+pyjwt = "^2.10.1"
 auth = {path = "../../libraries/auth"} #rename this to authlib or internal-auth-lib
 structlog = "^24.4.0"
-httpx = "^0.28.1"
+sqlalchemy = "^2.0.36"
+psycopg2-binary = "^2.9.10"
 uvicorn = "^0.32.1"
+alembic = "^1.14.0"
 
 
 [tool.poetry.group.dev.dependencies]

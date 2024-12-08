@@ -3,8 +3,6 @@ from typing import List, Any
 from pydantic import BaseModel, EmailStr, field_validator
 
 
-# TODO: All this models (except the Response ones) should be in a shared models library.
-
 class ImmutableBaseModel(BaseModel):
     class Config:
         allow_mutation = False
@@ -22,11 +20,7 @@ class Identifier(ImmutableBaseModel):
         return v
 
 
-class ExampleDataPayload(ImmutableBaseModel):
+class ExampleData(ImmutableBaseModel):
 
     identifiers: List[Identifier]
-    email: EmailStr
-
-
-class ExampleModelResponse(ImmutableBaseModel):
     email: EmailStr

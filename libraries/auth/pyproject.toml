@@ -1,13 +1,21 @@
 [tool.poetry]
 name = "auth"
-version = "0.1.0"
+version = "0.2.7"
 description = ""
 authors = ["Juan Pablo <juanpaps03@gmail.com>"]
 readme = "README.md"
 
 [tool.poetry.dependencies]
 python = "^3.12"
+pyjwt = "^2.10.1"
+fastapi = "^0.115.6"
+httpx = "^0.28.1"
 
+
+[tool.poetry.group.dev.dependencies]
+mypy = "^1.13.0"
+pytest = "^8.3.4"
+behave = "^1.2.6"
 
 [build-system]
 requires = ["poetry-core"]

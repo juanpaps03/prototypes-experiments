@@ -1,5 +1,7 @@
 import structlog
+from fastapi import Depends
 
+from inbound_data_gateway.clients.event_sourcing_example_client import EventSourcingExampleClient
 from inbound_data_gateway.example_data.models import ExampleModelResponse, ExampleDataPayload
 
 logger = structlog.get_logger(__name__)
@@ -19,8 +21,13 @@ class ExampleDataConverter:
 
 
 class ExampleDataService:
+    _event_sourcing_example_client: EventSourcingExampleClient
 
-    @staticmethod
-    def create_example_data(example_data: ExampleDataPayload) -> ExampleModelResponse:
-        logger.debug("Working hard")
+    def __init__(self, event_sourcing_example_client: EventSourcingExampleClient = Depends()):
+        self._event_sourcing_example_client = event_sourcing_example_client
+
+
+    async def create_example_data(self, example_data: ExampleDataPayload) -> ExampleModelResponse:
+        await self._event_sourcing_example_client.create_example_event(example_data)
+
         return ExampleDataConverter(example_data).get_example_model_response()

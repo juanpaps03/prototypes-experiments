@@ -3,19 +3,18 @@ from typing import Any
 import uvicorn
 from fastapi import FastAPI, Depends, APIRouter
 
-from inbound_data_gateway.api.example_data import example_data_router
-from inbound_data_gateway.settings import app_settings
-from auth.external_auth import ExternalJwtAuthentication
+from event_sourcing_example.api.event_sourcing_example import event_sourcing_example_route
+from event_sourcing_example.settings import app_settings
+from auth.internal_auth import InternalJwtAuthentication
 from auth.issuers import Issuers
 from auth.jwt import JWTBearer
 
 app = FastAPI()
-security = JWTBearer(
-    internal_jwt_auth=ExternalJwtAuthentication(
-        issuer=Issuers.EXTERNAL,
-        encryption_key=app_settings.super_secret_key
-    )
-)
+
+security = JWTBearer(internal_jwt_auth=InternalJwtAuthentication(
+    issuer=Issuers.EVENT_SOURCING_EXAMPLE,
+    encryption_key=app_settings.super_secret_key
+))
 
 @app.get("/healthcheck")
 async def healthcheck() -> Any:
@@ -24,7 +23,7 @@ async def healthcheck() -> Any:
 
 api_router = APIRouter()
 
-api_router.include_router(example_data_router, prefix="/example-data")
+api_router.include_router(event_sourcing_example_route, prefix="")
 
 
 

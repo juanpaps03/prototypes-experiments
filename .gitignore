@@ -125,3 +125,9 @@ cython_debug/
 #  option (not recommended) you can uncomment the following to ignore the entire idea folder.
 .idea/
 
+
+data-access/event-sourcing-example/db-data/
+
+data-access/event-sourcing-example/pgadmin-data/
+
+.python-version
