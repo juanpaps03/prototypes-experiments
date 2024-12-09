@@ -7,7 +7,6 @@ from event_sourcing_example.settings import app_settings
 
 engine = create_engine(app_settings.db_url)
 SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)
-Base = declarative_base()
 
 def get_db():
     db = SessionLocal()

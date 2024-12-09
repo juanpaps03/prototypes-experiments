@@ -1,12 +1,11 @@
 import uuid
 
-from pydantic.dataclasses import dataclass
 from sqlalchemy import ForeignKey, Integer, Column, String
 from sqlalchemy.orm import declarative_base
 
 from event_sourcing_example.event_processor.event import Event
 from event_sourcing_example.event_processor.model import EventModel
-from event_sourcing_example.example_data.models import ExampleData, Identifier
+from event_sourcing_example.example_data.models import ExampleData
 
 Base: type = declarative_base()
 

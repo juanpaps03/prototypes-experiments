@@ -3,8 +3,7 @@ import uuid
 import structlog
 from fastapi.params import Depends
 
-from event_sourcing_example.example_data.event_models import ExampleDataEventModel, \
-    CreateExampleDataEvent
+from event_sourcing_example.example_data.event_models import CreateExampleDataEvent
 from event_sourcing_example.example_data.event_processor import ExampleDataProcessor
 from event_sourcing_example.example_data.models import ExampleData
 

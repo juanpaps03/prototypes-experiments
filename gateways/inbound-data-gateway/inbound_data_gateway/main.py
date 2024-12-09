@@ -27,7 +27,6 @@ api_router = APIRouter()
 api_router.include_router(example_data_router, prefix="/example-data")
 
 
-
 pipeline = [Depends(security)]
 
 app.include_router(api_router, dependencies=pipeline)
