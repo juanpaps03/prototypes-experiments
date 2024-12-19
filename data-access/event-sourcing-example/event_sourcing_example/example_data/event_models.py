@@ -22,7 +22,7 @@ class ExampleDataEvent(Event[ExampleData], Base):
 
     __tablename__ = "example_data_event"
 
-    def trigger_event(self, model: ExampleDataEventModel | None) -> ExampleDataEventModel:
+    def trigger_event(self, model: ExampleData | None) -> ExampleData:
         raise NotImplemented
 
 
@@ -42,8 +42,8 @@ class CreateExampleDataEvent(ExampleDataEvent):
         self.email = email
 
 
-    def trigger_event(self, _: ExampleDataEventModel | None) -> ExampleDataEventModel:
-        return ExampleDataEventModel(
+    def trigger_event(self, _: ExampleData | None) -> ExampleData:
+        return ExampleData(
             email=self.email
         )
 

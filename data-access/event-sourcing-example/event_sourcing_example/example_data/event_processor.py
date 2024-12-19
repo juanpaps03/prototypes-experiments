@@ -13,8 +13,8 @@ class ExampleDataProcessor(EventProcessor[ExampleDataEvent, ExampleDataEventMode
     def __init__(self, example_data_repository: ExampleDataRepository = Depends()):
         self._example_data_repository = example_data_repository
 
-    def save_event(self, model: ExampleDataEventModel) -> None:
+    def save_event(self, model: ExampleDataEvent) -> None:
         self._example_data_repository.add_event(model)
 
-    def get_event_by_model_id(self, model_id: UUID):
+    async def get_event_by_model_id(self, model_id: UUID):
         pass

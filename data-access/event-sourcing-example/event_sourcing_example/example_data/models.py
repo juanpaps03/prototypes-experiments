@@ -22,5 +22,5 @@ class Identifier(ImmutableBaseModel):
 
 class ExampleData(ImmutableBaseModel):
 
-    identifiers: List[Identifier]
+    identifiers: List[Identifier] = []
     email: EmailStr

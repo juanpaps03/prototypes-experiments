@@ -20,11 +20,11 @@ class EventProcessor(Generic[event_t, model_t]):
 
     def record(self, event: event_t, model: model_t | None) -> model_t:
         updated_model = event.trigger_event(model)
-        self.save_event(updated_model)
+        self.save_event(event)
         return updated_model
 
 
-    def playback(self, model_id: UUID) -> model_t | None:
+    async def playback(self, model_id: UUID) -> model_t | None:
         model = None
         for event in self.get_event_by_model_id(model_id):
             model = event.trigger_event(model)

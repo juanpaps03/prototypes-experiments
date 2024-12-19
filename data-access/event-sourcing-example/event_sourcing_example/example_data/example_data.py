@@ -17,7 +17,7 @@ class ExampleDataService:
     def __init__(self, example_data_processor: ExampleDataProcessor = Depends()):
         self._example_data_processor = example_data_processor
 
-    def create_example_data(self, example_data: ExampleData) -> ExampleData:
+    async def create_example_data(self, example_data: ExampleData) -> ExampleData:
         event = CreateExampleDataEvent(
             example_data_id=uuid.uuid4(),
             email=example_data.email,
